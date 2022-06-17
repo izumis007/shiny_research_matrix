@@ -1,0 +1,12 @@
+pid, pname, cid, cname, val
+1,Title,0,.default,
+2,Authors,0,.default,
+3,Journal,0,.default,
+3,Journal,1,year,
+4,Study Design,0,.default,
+5,Outcome,0,.default,
+6,Main Variable,0,.default,
+7,Covariate,0,.default,
+8,Result,0,.default,
+9,Limitation,0,.default,
+10,Comment,0,.default,

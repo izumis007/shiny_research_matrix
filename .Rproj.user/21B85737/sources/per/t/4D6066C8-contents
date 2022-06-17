@@ -1,0 +1,12 @@
+pid, pname, cid, cname, val
+001,Title,00,.default,
+002,Authors,00,.default,
+003,Journal,00,.default,
+003,Journal,01,year,
+004,Study Design,00,.default,
+005,Outcome,00,.default,
+006,Main Variable,00,.default,
+007,Covariate,00,.default,
+008,Result,00,.default,
+009,Limitation,00,.default,
+010,Comment,00,.default,

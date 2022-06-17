@@ -1,0 +1,27 @@
+{
+    "id": "23F8E0D9",
+    "path": "C:/Users/ma060/Desktop/shiny-rmatrix/app.R",
+    "project_path": "app.R",
+    "type": "r_source",
+    "hash": "1940317852",
+    "contents": "",
+    "dirty": false,
+    "created": 1655303563030.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "31,49",
+        "scrollLine": "16"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1655473448,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1655473448394,
+    "read_only": false,
+    "read_only_alternatives": []
+}
