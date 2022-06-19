@@ -24,13 +24,15 @@ vmatrixServer <- function(id,matrix_contents) {
       #logic for display inputs
       output$mx <- renderUI({
         
-        mc_row <- nrow(matrix_contents())
+        dat <- matrix_contents()
+  
+        mc_row <- nrow(dat)
         
         if(mc_row==0){
           ret <- "No group available make at least one"
         }else{
           
-          ret <- matrix_contents() |> 
+          ret <- dat |> 
             mutate(id    = str_glue("___{pid}___{pname}_{cid}_{cname}")) |> 
             mutate(input = pmap(list(pname,cid,cname,id,val), ~{
               if(..2=="00"){
@@ -69,17 +71,15 @@ vmatrixServer <- function(id,matrix_contents) {
       #logic for return manipulated value
       module_returning_value <- reactive({
         mxids <- names(input)[str_detect(names(input),"^___")]
-    
+      
         new_mxdat <- tibble(pdfname = apdf(), x = mxids, val = map_chr(mxids,~input[[.]])) |> 
           extract(col=x,
                   into=c("pid","pname","cid","cname"),
                   regex="^___(\\d+)___(.+)_(\\d+)_(.+)$") |> 
           arrange(pid,cid)
       })
-
-      return(reactive({
-        module_returning_value()
-      }))
+      
+      return(reactive({module_returning_value()}))
     }
   )
 }
