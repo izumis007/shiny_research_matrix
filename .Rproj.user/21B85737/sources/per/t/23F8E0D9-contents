@@ -116,13 +116,13 @@ server <- function(input,output,session){
       select(pname,pdfname,text) |> 
       pivot_wider(id_cols = c("pdfname"), names_from = pname, values_from=text)
     
-    stylewrap <- openxlsx::createStyle(wrapText = TRUE)
-    
-    wb <- openxlsx::createWorkbook()
-    openxlsx::addWorksheet(wb,"matrix")
-    openxlsx::writeData(wb,"matrix",dat3)
-    openxlsx::addStyle(wb,"matrix",style=stylewrap,rows = c(1:nrow(dat3)), cols = c(2:ncol(dat3)), gridExpand=TRUE)
-    openxlsx::saveWorkbook(wb, str_c(dirname(selected_pdf()),"/matrix.xlsx"),overwrite = TRUE)
+    write_excel_csv(dat3,str_c(dirname(selected_pdf()),"/matrix.csv"),append = FALSE)
+    # stylewrap <- openxlsx::createStyle(wrapText = TRUE)
+    # wb <- openxlsx::createWorkbook()
+    # openxlsx::addWorksheet(wb,"matrix")
+    # openxlsx::writeData(wb,"matrix",dat3)
+    # #openxlsx::addStyle(wb,"matrix",style=stylewrap,rows = c(1:nrow(dat3)), cols = c(2:ncol(dat3)), gridExpand=TRUE)
+    # openxlsx::saveWorkbook(wb, str_c(dirname(selected_pdf()),"/matrix.xlsx"),overwrite = TRUE)
   })
 }
 

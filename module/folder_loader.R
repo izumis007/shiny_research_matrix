@@ -32,6 +32,10 @@ folderLoaderServer <- function(id) {
       dir <- reactive({
         if(file.exists(here::here("prevpath.txt"))){
           prevpath <- read_lines(here::here("prevpath.txt"))
+          
+          if(length(prevpath)==0){
+            prevpath <- ""
+          }
         }else{
           prevpath <- ""
         }
