@@ -10,7 +10,7 @@
 このアプリの利用には、R言語とRStudioのインストールが終わっていることが必要です。
 またRのShinyを起動させる必要があります。
 
-**宣伝**：R、RStudio、Shiny等がわからない方は、このような[オンラインコース](https://r-online-course.netlify.app/#hero)を作っていたりするのでよろしければご購入ください。
+**宣伝**：R、RStudio、Shiny等がわからない方は、このような[オンラインコース](https://www.bunseki-data.com/coupon.html)を作っていたりするのでよろしければご購入ください。
 
 ## 使い方
 
@@ -72,4 +72,4 @@ PDFをおいているディレクトリにtag.xlsxファイルというものが
 
 <a href="https://www.buymeacoffee.com/norinishida" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-宣伝；あと、こんなアプリが作れるR言語ってすごい！！学んでみたい！！と思った方がいらっしゃれば、[オンラインコース](https://r-online-course.netlify.app/#hero)も2000円未満（クーポン適応価格）で販売しているので、ちょっとのぞいていっていただけると嬉しいです。
+宣伝；あと、こんなアプリが作れるR言語ってすごい！！学んでみたい！！と思った方がいらっしゃれば、[オンラインコース](https://www.bunseki-data.com/coupon.html)も販売しているので、ちょっとのぞいていっていただけると嬉しいです。
